@@ -1,0 +1,156 @@
+:root{
+    --blueText: #acd5f2;
+    --blueButton: #3db4f2;
+    --bluegrayText: #5c728a;
+    --lightblueBG: #edf1f5;
+    --grayText: #99998f;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+body{
+    background-color: #f0f0f0;
+    font-family: Lucida Calligraphy;
+}
+.navbar{
+    display: flex;
+    height: 100px;
+    width: 100vw;
+    align-items: center;
+    background-color: black;
+    margin-bottom: 50px;
+}
+.navbar img{
+    margin-right: 30px;
+}
+.navbar h1{
+    font-size: 50px;
+    color: white;
+}
+.navbar #yellow{
+    display: inline;
+    color: #ffb91d;
+}
+.cart{
+    position: absolute;
+    right: 50px;
+}
+.cart path{
+    fill: white;
+}
+.cart path:hover{
+    fill: #ffb91d;
+}
+.main-container{
+    width: 65vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.books{
+    position: relative;
+    float: left;
+    flex-direction: column;
+    width: 12vw;
+    height: 400px;
+    padding: 15px 30px;
+    margin: 1px;
+    background-color: white;
+    color: black;
+}
+.books p{
+    font-weight: 700;
+}
+.books .details{
+    position: absolute;
+    bottom: 25px;
+}
+a{
+    text-decoration: none;
+}
+.books:hover{
+    background-color: #f0f0f0;
+}
+.books img{
+    width: 100%;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    color: white;
+    font-family: Lucida Sans;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+footer .one{
+    margin-right: 400px;
+}
+footer .two{
+    margin-right: 100px;
+}
+footer .three{
+    margin-right: -200px;
+}
+footer p{
+    color: var(--grayText);
+    font-weight: 900;
+}
+footer .one p:hover{
+    color: #f0f0f0;
+    cursor: pointer;
+}
+footer svg{
+    width: 30px;
+    height: 30px;
+}
+footer path{
+    fill: var(--grayText);
+}
+footer path:hover{
+    fill: #f0f0f0;
+    cursor: pointer;
+}
+footer input{
+    height: 50px;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: #1a1a1a;
+}
+footer input:focus{
+    outline: none
+}
+footer input::placeholder{
+    font-weight: 900;
+}
+footer .submit{
+    position: absolute;
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-color: #d5222e;
+    padding: 10px;
+    padding-left: 15px;
+    padding-top: 12px;
+    overflow: hidden;
+    right: 289px;
+    bottom: 124px;
+}
+footer .submit path{
+    fill: white;
+}
+footer .submit:hover{
+    background-color: #ac1c25;
+    transition: .5s;
+}
