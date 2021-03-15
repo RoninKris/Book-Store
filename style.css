@@ -114,8 +114,8 @@ footer svg{
 footer path{
     fill: var(--grayText);
 }
-footer path:hover{
-    fill: #f0f0f0;
+footer svg:hover{
+    filter: brightness(100);
     cursor: pointer;
 }
 footer input{
@@ -153,4 +153,41 @@ footer .submit path{
 footer .submit:hover{
     background-color: #ac1c25;
     transition: .5s;
+}
+
+.icon{
+    float: left;
+}
+.product-details{
+    float: left;
+    margin-left: 150px;
+}
+.product-details h1{
+    font-weight: 900;
+}
+.product-details p{
+    font-weight: 700;
+    color: #666;
+}
+hr{
+    margin: 25px 0;
+    color: gray;
+}
+.quantity input{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #f4f4f4;
+    border: 1px solid #e7e7e7;
+    font-weight: 700;
+}
+.quantity input[type=button]:hover{
+    background-color: #e7e7e7;
+}
+input[type=button]{
+    cursor: pointer;
+}
+input:focus{
+    outline: none;
 }

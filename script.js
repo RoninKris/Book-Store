@@ -11,14 +11,32 @@ function displayBooks(){
     ];
 
     for(var i = 0; i < 7; i++){
-        main.innerHTML+= "<a href='product.php?title=Harry Potter and the Philosopher\'s Stone>" +
+        main.innerHTML+= "<a href='product.php?src=" + books[i][0] + "&title=" + books[i][1] + "&price=" + books[i][2]
     "<div class='books'>" +
             "<img src='" + books[i][0] + "' alt=''>" +
             "<div class='details'>" +
                 "<p>" + books[i][1] + "</p>" +
-                "Php" + books[i][2] + "<br>" +
+                "PHP " + books[i][2] + "<br>" +
             "</div>" +
         "</div>" +
     "</a>";
+    }
+}
+/*
+TODO:
+* Fix minusQuantity and addQuantity not working
+  * Output is NaN
+*/
+function minusQuantity(){
+    let qty = parseInt(document.querySelector(".quantity").value, 10);
+    if(qty > 0){
+        qty--;
+    }
+    console.log(qty);
+}
+function addQuantity(){
+    let qty = parseInt(document.querySelector(".quantity").value, 10);
+    if(qty < 10){
+        qty++;
     }
 }
