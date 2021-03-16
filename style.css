@@ -185,9 +185,12 @@ hr{
     margin: 25px 0;
     border-top: 1px solid #cacaca;
 }
+.quantity input[type=button]{
+    color: gray;
+}
 .quantity input{
     text-align: center;
-    width: 50px;
+    width: 30px;
     height: 50px;
     border: none;
     background-color: #f4f4f4;
@@ -249,4 +252,67 @@ input:focus{
     font-weight: normal;
     color: #666;
     font-family: 'Libre Baskerville', serif;
+}
+
+.product{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 1px;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    overflow: hidden;
+}
+.product img{
+    width: 8%;
+}
+.product .cart-details{
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+.cart-details h4{
+    font-size: 22px;
+}
+.cart-details p{
+    font-weight: 700;
+    font-family: Arial;
+    color: gray;
+}
+.price{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    margin-left: px;
+}
+.price p{
+    font-family: Arial;
+    font-weight: 700;
+    color: gray;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.price .currency{
+    right: 55px;
+}
+.total{
+    margin-top: 25px;
+    position: relative;
+    height: auto;
+    width: auto;
+    overflow: hidden;
+    float: right;
+}
+.total p{
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 25px;
 }

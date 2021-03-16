@@ -28,7 +28,8 @@
     style='
     background-color: white; 
     width: 100%;
-    padding: 50px 300px;
+    padding: 50px 0;
+    padding-left: 300px;
     '>
         <?php
             echo "<div class='icon'>
@@ -38,7 +39,7 @@
             <h1>$title</h1>
             <p>PHP $price</p>
             <hr>
-            <form action='add.php' method='post' id='submitform'>
+            <form action='' method='post' id='submitform'>
                 <div class=invisible>
                 <input type=text name=title value=$title>
                 <input type=text name=price value=$price>
@@ -49,8 +50,8 @@
                     <p style='font-weight: 500;'>Quantity</p>
                     <input type='button' value='&minus;' onclick='minusQuantity()'><input type='text' name='quantity' value='1' class='quantityBox'><input type='button' value='+' onclick='addQuantity()'>
                 </div>
-                <input type=submit value='Add to Cart' name=addtocart class='addtocart'>
-                <input type=submit value='Buy it now' name=buyitnow class='buynow'>
+                <input type=button value='Add to Cart' onclick='addToCart()' name=addtocart class='addtocart'>
+                <input type=button value='Buy it now' onclick='buyItNow()' name=buyitnow class='buynow'>
                 <div class='synopsis'>
                     <hr>
                     $synopsis

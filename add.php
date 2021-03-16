@@ -5,13 +5,9 @@
     $quantity = $_POST['quantity'];
     $src = $_POST['src'];
     $synopsis = $_POST['synopsis'];
-    if($_POST['addtocart']){
         array_push($_SESSION['titles'], $title);
         array_push($_SESSION['prices'], $price);
         array_push($_SESSION['quantities'], $quantity);
+        echo "<script> alert(Item added to cart)</script>";
         header("Location: index.php");
-    }
-    else if($_POST['buyitnow']){
-        header('Location: cart.php');
-    }
 ?>

@@ -38,3 +38,9 @@ function addQuantity(){
     }
     document.querySelector(".quantityBox").value = qty;
 }
+form = document.querySelector("#submitform");
+function addToCart(){
+    form.action="add.php"
+    alert("Item successfully added to cart");
+    form.submit();
+}

@@ -34,7 +34,7 @@
                 </div>
             </div>
         </a>
-        <a href="product.php?src=images/3.jpg&title=Harry Potter and </h1><h1>the Prisoner of Azkaban&price=690.00&synopsis=Harry Potter and the Prisoner of Azkaban is a fantasy novel written by British author J. K. ... Along with friends Ronald Weasley and Hermione Granger, Harry investigates Sirius Black, an escaped prisoner from Azkaban, the wizard prison, believed to be one of Lord Voldemort's old allies."> 
+        <a href="product.php?src=images/3.jpg&title=Harry Potter and the Prisoner of Azkaban&price=690.00&synopsis=Harry Potter and the Prisoner of Azkaban is a fantasy novel written by British author J. K. ... Along with friends Ronald Weasley and Hermione Granger, Harry investigates Sirius Black, an escaped prisoner from Azkaban, the wizard prison, believed to be one of Lord Voldemort's old allies."> 
             <div class='books'> 
                 <img src='images/3.jpg' alt=''>
                 <div class='details'>
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </a>
-        <a href="product.php?src=images/5.jpg&title=Harry Potter and </h1><h1>the Order of the Phoenix&price=830.00&synopsis=Rowling and the fifth novel in the Harry Potter series. It follows Harry Potter's struggles through his fifth year at Hogwarts School of Witchcraft and Wizardry, including the surreptitious return of the antagonist Lord Voldemort, O.W.L. exams, and an obstructive Ministry of Magic."> 
+        <a href="product.php?src=images/5.jpg&title=Harry Potter and the Order of the Phoenix&price=830.00&synopsis=Rowling and the fifth novel in the Harry Potter series. It follows Harry Potter's struggles through his fifth year at Hogwarts School of Witchcraft and Wizardry, including the surreptitious return of the antagonist Lord Voldemort, O.W.L. exams, and an obstructive Ministry of Magic."> 
             <div class='books'> 
                 <img src='images/5.jpg' alt=''>
                 <div class='details'>
