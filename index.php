@@ -11,12 +11,74 @@
     <div class="navbar">
         <img src="images/logo.png" alt="" height="100%">
         <h1> <div id="yellow"> Flourish</div> and <div id="yellow">Blotts</div> Bookseller</h1>
-            <a class="cart" href="">
+            <a class="cart" href="cart.php">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
             </a>
     </div>
     <div class="main-container">
-        
+        <a href="product.php?src=images/1.jpg&title=Harry Potter and the Philosopher's Stone&price=420.00&synopsis=The first novel in the Harry Potter series and Rowling's debut novel, it follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry."> 
+            <div class='books'> 
+                <img src='images/1.jpg' alt=''>
+                <div class='details'>
+                    <p>Harry Potter and the Philosopher's Stone</p>
+                    PHP 420.00<br>
+                </div>
+            </div>
+        </a>
+        <a href="product.php?src=images/2.jpg&title=Harry Potter and the Chamber of Secrets&price=580.00&synopsis=The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the &quot;Chamber of Secrets&quot; has been opened and that the &quot;heir of Slytherin&quot; would kill all pupils who do not come from all-magical families."> 
+            <div class='books'> 
+                <img src='images/2.jpg' alt=''>
+                <div class='details'>
+                    <p>Harry Potter and the Chamber of Secrets</p>
+                    PHP 580.00<br>
+                </div>
+            </div>
+        </a>
+        <a href="product.php?src=images/3.jpg&title=Harry Potter and </h1><h1>the Prisoner of Azkaban&price=690.00&synopsis=Harry Potter and the Prisoner of Azkaban is a fantasy novel written by British author J. K. ... Along with friends Ronald Weasley and Hermione Granger, Harry investigates Sirius Black, an escaped prisoner from Azkaban, the wizard prison, believed to be one of Lord Voldemort's old allies."> 
+            <div class='books'> 
+                <img src='images/3.jpg' alt=''>
+                <div class='details'>
+                    <p>Harry Potter and the Prisoner of Azkaban</p>
+                    PHP 690.00<br>
+                </div>
+            </div>
+        </a>
+        <a href="product.php?src=images/4.jpg&title=Harry Potter and the Goblet of Fire&price=715.00&synopsis=Rowling and the fourth novel in the Harry Potter series. It follows Harry Potter, a wizard in his fourth year at Hogwarts School of Witchcraft and Wizardry, and the mystery surrounding the entry of Harry's name into the Triwizard Tournament, in which he is forced to compete."> 
+            <div class='books'> 
+                <img src='images/4.jpg' alt=''>
+                <div class='details'>
+                    <p>Harry Potter and the Goblet of Fire</p>
+                    PHP 715.00<br>
+                </div>
+            </div>
+        </a>
+        <a href="product.php?src=images/5.jpg&title=Harry Potter and </h1><h1>the Order of the Phoenix&price=830.00&synopsis=Rowling and the fifth novel in the Harry Potter series. It follows Harry Potter's struggles through his fifth year at Hogwarts School of Witchcraft and Wizardry, including the surreptitious return of the antagonist Lord Voldemort, O.W.L. exams, and an obstructive Ministry of Magic."> 
+            <div class='books'> 
+                <img src='images/5.jpg' alt=''>
+                <div class='details'>
+                    <p>Harry Potter and the Order of the Phoenix</p>
+                    PHP 830.00<br>
+                </div>
+            </div>
+        </a>
+        <a href="product.php?src=images/6.jpg&title=Harry Potter and the Half-blood Prince&price=920.00&synopsis=Rowling and the sixth and penultimate novel in the Harry Potter series. Set during Harry Potter's sixth year at Hogwarts, the novel explores the past of the boy wizard's nemesis, Lord Voldemort, and Harry's preparations for the final battle against Voldemort alongside his headmaster and mentor Albus Dumbledore."> 
+            <div class='books'> 
+                <img src='images/6.jpg' alt=''>
+                <div class='details'>
+                    <p>Harry Potter and the Goblet of Fire</p>
+                    PHP 715.00<br>
+                </div>
+            </div>
+        </a>
+        <a href="product.php?src=images/7.jpg&title=Harry Potter and the Deathly Hollows&price=1080.00&synopsis=The novel chronicles the events directly following Harry Potter and the Half-Blood Prince (2005) and the final confrontation between the wizards Harry Potter and Lord Voldemort. Deathly Hallows shattered sales records upon release, surpassing marks set by previous titles of the Harry Potter series."> 
+            <div class='books'> 
+                <img src='images/7.jpg' alt=''>
+                <div class='details'>
+                    <p>Harry Potter and the Deathly Hollows</p>
+                    PHP 1080.00<br>
+                </div>
+            </div>
+        </a>
     </div>
     <footer>
         <div class="col one">

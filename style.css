@@ -11,6 +11,9 @@
     padding: 0;
     overflow-x: hidden;
 }
+.invisible{
+    display: none;
+}
 body{
     background-color: #f0f0f0;
     font-family: Lucida Calligraphy;
@@ -50,6 +53,7 @@ body{
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    overflow-y: hidden;
 }
 .books{
     position: relative;
@@ -170,10 +174,12 @@ footer .submit:hover{
 }
 .product-details h1{
     font-weight: 900;
+    width: 100%;
 }
 .product-details p{
     font-weight: 700;
     color: #666;
+    font-family: Arial;
 }
 hr{
     margin: 25px 0;
@@ -203,11 +209,13 @@ input:focus{
     border: 1px solid  #ffb91d;
     border-radius: 5px;
     color: #ffb91d;
+    background-color: white;
     padding: 20px 50px;
     text-align: center;
     margin-top: 20px;
     font-weight: 900;
     transition: .5s;
+    width: 100%;
 }
 .addtocart:hover{
     transition: .5s;
@@ -225,16 +233,20 @@ input:focus{
     margin-top: 20px;
     font-weight: 900;
     transition: .5s;
+    width: 100%;
+    border: none;
 }
 .buynow:hover{
     transition: .5s;
     background-color: #f9ae00;
     cursor: pointer;
 }
+
 .synopsis{
     position: absolute;
     margin-top: 80px;
     width: 34%;
     font-weight: normal;
     color: #666;
+    font-family: 'Libre Baskerville', serif;
 }

@@ -1,12 +1,17 @@
 <?php
-    $bookname = $_POST['bookname'];
+    session_start();
+    $title = $_POST['title'];
     $price = $_POST['price'];
-    $booknames = array();
-    $prices = array();
-    array_push($booknames, $bookname);
-    array_push($prices, $price);
-    // for($i = 0; $i < sizeof($booknames); $i++){
-    //     echo $booknames[$i] . "<br>";
-    // }
-    echo $booknames[0];
+    $quantity = $_POST['quantity'];
+    $src = $_POST['src'];
+    $synopsis = $_POST['synopsis'];
+    if($_POST['addtocart']){
+        array_push($_SESSION['titles'], $title);
+        array_push($_SESSION['prices'], $price);
+        array_push($_SESSION['quantities'], $quantity);
+        header("Location: index.php");
+    }
+    else if($_POST['buyitnow']){
+        header('Location: cart.php');
+    }
 ?>
