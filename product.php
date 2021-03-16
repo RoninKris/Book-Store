@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 $src = $_GET['src'];
 $title = $_GET['title'];
 $price = $_GET['price'];

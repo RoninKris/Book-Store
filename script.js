@@ -11,15 +11,16 @@ function displayBooks(){
     ];
 
     for(var i = 0; i < 7; i++){
-        main.innerHTML+= "<a href='product.php?src=" + books[i][0] + "&title=" + books[i][1] + "&price=" + books[i][2]
-    "<div class='books'>" +
-            "<img src='" + books[i][0] + "' alt=''>" +
-            "<div class='details'>" +
-                "<p>" + books[i][1] + "</p>" +
-                "PHP " + books[i][2] + "<br>" +
+        main.innerHTML+= "" +
+        "<a href='product.php?src=" + books[i][0] + "&title=" + books[i][1] + "&price=" + books[i][2] + "'>" +
+            "<div class='books'>" +
+                "<img src='" + books[i][0] + "' alt=''>" +
+                "<div class='details'>" +
+                    "<p>" + books[i][1] + "</p>" +
+                    "PHP " + books[i][2] + "<br>" +
+                "</div>" +
             "</div>" +
-        "</div>" +
-    "</a>";
+        "</a>";
     }
 }
 /*
