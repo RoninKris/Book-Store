@@ -29,15 +29,17 @@ TODO:
   * Output is NaN
 */
 function minusQuantity(){
-    let qty = parseInt(document.querySelector(".quantity").value, 10);
-    if(qty > 0){
+    let qty = parseInt(document.querySelector(".quantityBox").value);
+    if(qty > 1){
         qty--;
     }
-    console.log(qty);
+    console.log(parseInt(qty));
+    document.querySelector(".quantityBox").value = qty;
 }
 function addQuantity(){
-    let qty = parseInt(document.querySelector(".quantity").value, 10);
+    let qty = parseInt(document.querySelector(".quantityBox").value);
     if(qty < 10){
         qty++;
     }
+    document.querySelector(".quantityBox").value = qty;
 }

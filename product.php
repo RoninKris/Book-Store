@@ -25,7 +25,7 @@ $price = $_GET['price'];
     style="
     background-color: white; 
     width: 100%;
-    padding: 50px 300px
+    padding: 50px 300px;
     ">
         <div class="icon">
             <img src="images/1.jpg" alt="">
@@ -37,10 +37,20 @@ $price = $_GET['price'];
             <form action="add.php" method="post">
                 <div class="quantity">
                     <p>Quantity</p>
-                    <input type="button" value="&minus;" onclick="minusQuantity()"><input type="text" value="1" name="quantity" class="quantity"><input type="button" value="+" onclick="addQuantity()">
+                    <input type="button" value="&minus;" onclick="minusQuantity()"><input type="text" value="1" class="quantityBox" disabled><input type="button" value="+" onclick="addQuantity()">
+                </div>
+                <div class="addtocart">
+                    Add to Cart
+                </div>
+                <div class="buynow">
+                    Buy it now
+                </div>
+                <div class="synopsis">
+                    <hr>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quam nostrum labore eaque, aliquam nemo neque recusandae accusantium a voluptatibus voluptatum minima excepturi voluptas ipsam nihil, non earum quia modi quibusdam blanditiis. Quis, necessitatibus voluptas, porro eius assumenda explicabo totam ad esse nostrum delectus modi neque ipsum dignissimos dolorum laborum!
+                    <hr>
                 </div>
             </form>
-            
         </div>
     </div>
     <footer>

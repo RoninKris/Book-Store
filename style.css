@@ -157,6 +157,12 @@ footer .submit:hover{
 
 .icon{
     float: left;
+    transition: .5s;
+}
+.icon:hover{
+    box-shadow: 0 0 25px #ffb91d;
+    transition: .5s;
+    cursor: pointer;
 }
 .product-details{
     float: left;
@@ -171,7 +177,7 @@ footer .submit:hover{
 }
 hr{
     margin: 25px 0;
-    color: gray;
+    border-top: 1px solid #cacaca;
 }
 .quantity input{
     text-align: center;
@@ -190,4 +196,45 @@ input[type=button]{
 }
 input:focus{
     outline: none;
+}
+
+.addtocart{
+    height: 100%;
+    border: 1px solid  #ffb91d;
+    border-radius: 5px;
+    color: #ffb91d;
+    padding: 20px 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 900;
+    transition: .5s;
+}
+.addtocart:hover{
+    transition: .5s;
+    border: 1px solid #f9ae00;
+    cursor: pointer;
+    color: #f9ae00;
+}
+.buynow{
+    height: 100%;
+    background-color: #ffb91d;
+    border-radius: 5px;
+    color: white;
+    padding: 20px 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 900;
+    transition: .5s;
+}
+.buynow:hover{
+    transition: .5s;
+    background-color: #f9ae00;
+    cursor: pointer;
+}
+.synopsis{
+    position: absolute;
+    margin-top: 80px;
+    width: 34%;
+    font-weight: normal;
+    color: #666;
 }
