@@ -2,6 +2,8 @@
     session_start();
     $titles = $_SESSION['titles'];
     $prices = $_SESSION['prices'];
+    $quantities = $_SESSION['quantities'];
+    $srcs = $_SESSION['srcs'];
     // $quantities = $_SESSION['quantities'];
     // for($i = 0; $i < sizeOf($titles); $i++){
     //     echo $titles[$i]."<br>";
@@ -29,42 +31,41 @@
             </a>
     </div>
     <div class='main-container'>
-       <div class="product">
-           <img src="images/1.jpg" alt="">
-           <div class="cart-details">
-               <h4>Harry Potter and the chenes chene sadasdasdasdasdasds</h4> 
-               <p>Quantity: 1</p>
-           </div>
-           <div class="price">
-               <p>PHP 690.00</p>
-           </div>
-       </div>
-       <div class="product">
-           <img src="images/1.jpg" alt="">
-           <div class="cart-details">
-               <h4>Harry Potter and the chenes chene sadasdasdasdasdasds</h4> 
-               <p>Quantity: 1</p>
-           </div>
-           <div class="price">
-               <p>PHP 690.00</p>
-           </div>
-       </div>
-       <div class="product">
-           <img src="images/1.jpg" alt="">
-           <div class="cart-details">
-               <h4>Harry Potter and the chenes chene sadasdasdasdasdasds</h4> 
-               <p>Quantity: 1</p>
-           </div>
-           <div class="price">
-               <p>PHP 690.00</p>
-           </div>
-       </div>
+       <?php
+       $total = 0;
+       
+        for($i = 0; $i < sizeOf($titles); $i++){
+            echo "
+            <div class='product'>
+                <img src='".$srcs[$i]."' alt=''>
+                <div class='cart-details'>
+                    <h4>".$titles[$i]."</h4> 
+                    <p>Quantity: ".$quantities[$i]."</p>
+                </div>
+                <div class='price'>
+                    <p>PHP ".$prices[$i]."</p>
+                </div>
+            </div>";
+            $total+=floatval($prices[$i]);
+        }
+        if(sizeOf($titles) == 0){
+            echo "
+            <div class='empty'>
+                <p>Your cart is currently empty.</p>
+                <a href='start.php'><div class='continue'>Continue browsing</div></a>
+            </div>";
+           }
+        else{
+            echo "
+            <div class='total'>
+                <p>PHP $total</p>
+                <p style='color: gray'>Total</p>
+            </div>";
+        }
 
-       <div class="total">
-           <p>PHP 690.00</p>
-           <p style="color: gray">Total</p>
-       </div>
+       ?>
     </div>
+
     <footer>
         <div class='col one'>
             <h1>INFORMATION</h1>

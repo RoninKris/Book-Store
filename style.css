@@ -18,13 +18,18 @@ body{
     background-color: #f0f0f0;
     font-family: Lucida Calligraphy;
 }
+.wrapper{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
 .navbar{
     display: flex;
     height: 100px;
     width: 100vw;
     align-items: center;
     background-color: black;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 .navbar img{
     margin-right: 30px;
@@ -49,11 +54,13 @@ body{
 }
 .main-container{
     width: 65vw;
-    height: 100vh;
+    min-height: 60vh;
+    height: auto;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     overflow-y: hidden;
+    padding: 50px 0;
 }
 .books{
     position: relative;
@@ -302,6 +309,37 @@ input:focus{
 }
 .price .currency{
     right: 55px;
+}
+.empty{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.empty p{
+    color: gray;
+    font-family: Arial;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.continue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffb91d;
+    width: 250px;
+    height: 80;
+    padding: 25px;
+    font-weight: 700;
+    color: white;
+    font-family: Arial;
+    transition: .5s
+}
+.continue:hover{
+    background-color: #f9ae00;
+    transition: .5s;
 }
 .total{
     margin-top: 25px;
