@@ -31,8 +31,6 @@
             </a>
     </div>
     <div class='main-container-checkout'>
-        
-        
         <?php
         $onethousand = 0;
         $fivehundred = 0;
@@ -45,39 +43,39 @@
         $one = 0;
         $total = $_GET['total'];
         while($total > 0){
-            if($total > 1000){
+            if($total >= 1000){
                 $total-=1000;
                 $onethousand++;
             }
-            elseif($total > 500){
+            elseif($total >= 500){
                 $total-=500;
                 $fivehundred++;
             }
-            elseif($total > 200){
+            elseif($total >= 200){
                 $total-=200;
                 $twohundred++;
             }
-            elseif($total > 100){
+            elseif($total >= 100){
                 $total-=100;
                 $onehundred++;
             }
-            elseif($total > 50){
+            elseif($total >= 50){
                 $total-=50;
                 $fifty++;
             }
-            elseif($total > 20){
+            elseif($total >= 20){
                 $total-=20;
                 $twenty++;
             }
-            elseif($total > 10){
+            elseif($total >= 10){
                 $total-=10;
                 $ten++;
             }
-            elseif($total > 5){
+            elseif($total >= 5){
                 $total-=5;
                 $five++;
             }
-            elseif($total > 1){
+            elseif($total >= 1){
                 $total-=1;
                 $one++;
             }
