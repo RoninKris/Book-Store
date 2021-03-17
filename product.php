@@ -41,7 +41,7 @@
             <hr>
             <form action='' method='post' id='submitform'>
                 <div class=invisible>
-                <input type=text name=title value=$title>
+                <input type=text name=title value=".$title.">
                 <input type=text name=price value=$price>
                 <input type=text name=src value=$src>
                 <input type=text name=synopsis value=$synopsis>

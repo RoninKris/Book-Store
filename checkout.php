@@ -20,9 +20,9 @@
     <link rel='stylesheet' href='style.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <title>Cart</title>
+    <title>Check out</title>
 </head>
-<body>
+<body onload="displayBills()">
     <div class='navbar'>
         <img src='images/logo.png' alt='' height='100%'>
         <h1> <div id='yellow'> Flourish</div> and <div id='yellow'>Blotts</div> Bookseller</h1>
@@ -30,49 +30,142 @@
                 <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z'/></svg>
             </a>
     </div>
-    <div class='main-container'>
-       <?php
-       $total = 0;
-       
-        for($i = 0; $i < sizeOf($titles); $i++){
-            echo "
-            <div class='product'>
-                <img src='".$srcs[$i]."' alt=''>
-                <div class='cart-details'>
-                    <h4>".$titles[$i]."</h4> 
-                    <p>Quantity: ".$quantities[$i]."</p>
-                </div>
-                
-                <div class='price'>
-                    <p>PHP ".$prices[$i]."</p>
-                </div>
-            </div>";
-            $total+=$prices[$i] * $quantities[$i];
+    <div class='main-container-checkout'>
+        
+        
+        <?php
+        $onethousand = 0;
+        $fivehundred = 0;
+        $twohundred = 0;
+        $onehundred = 0;
+        $fifty = 0;
+        $twenty = 0;
+        $ten = 0;
+        $five = 0;
+        $one = 0;
+        $total = $_GET['total'];
+        while($total > 0){
+            if($total > 1000){
+                $total-=1000;
+                $onethousand++;
+            }
+            elseif($total > 500){
+                $total-=500;
+                $fivehundred++;
+            }
+            elseif($total > 200){
+                $total-=200;
+                $twohundred++;
+            }
+            elseif($total > 100){
+                $total-=100;
+                $onehundred++;
+            }
+            elseif($total > 50){
+                $total-=50;
+                $fifty++;
+            }
+            elseif($total > 20){
+                $total-=20;
+                $twenty++;
+            }
+            elseif($total > 10){
+                $total-=10;
+                $ten++;
+            }
+            elseif($total > 5){
+                $total-=5;
+                $five++;
+            }
+            elseif($total > 1){
+                $total-=1;
+                $one++;
+            }
+
         }
-        if(sizeOf($titles) == 0){
-            echo "
-            <div class='empty'>
-                <p>Your cart is currently empty.</p>
-                <a href='start.php'><div class='continue'>Continue browsing</div></a>
-            </div>";
-           }
-        else{
-            echo "
-            <div class='total'>
+        echo "<div class='toRight'>
+        <div class='bills box'>
+            <div class='bill'>
+                <img src='images/bills/1000.jpg'>
+                <div class='bill-count'>
+                    <h1 class='billQuantity'>$onethousand</h1>
+                </div>
+            </div>
+            <div class='bill'>
+                <img src='images/bills/500.jpg'>
+                <div class='bill-count'>
+                    <h1 class='billQuantity'>$fivehundred</h1>
+                </div>
+            </div>
+            <div class='bill'>
+                <img src='images/bills/200.jpg'>
+                <div class='bill-count'>
+                    <h1 class='billQuantity'>$twohundred</h1>
+                </div>
+            </div>
+            <div class='bill'>
+                <img src='images/bills/100.jpg'>
+                <div class='bill-count'>
+                    <h1 class='billQuantity'>$onehundred</h1>
+                </div>
+            </div>
+            <div class='bill'>
+                <img src='images/bills/50.jpg'>
+                <div class='bill-count'>
+                    <h1 class='billQuantity'>$fifty</h1>
+                </div>
+            </div>
+            <div class='bill'>
+                <img src='images/bills/20.jpg'>
+                <div class='bill-count'>
+                    <h1 class='billQuantity'>$twenty</h1>
+                </div>
+            </div>
+            <div class='bill coins'>
+                <img src='images/bills/10.jpg'>
+                <div class='bill-count'>
+                    <h1 class='billQuantity'>$ten</h1>
+                </div>
+            </div>
+            <div class='bill coins'>
+                <img src='images/bills/5.png'>
+                <div class='bill-count'>
+                    <h1 class='billQuantity'>$five</h1>
+                </div>
+            </div>
+            <div class='bill coins'>
+                <img src='images/bills/1.jpg'>
+                <div class='bill-count'>
+                    <h1 class='billQuantity'>$one</h1>
+                </div>
+            </div>
+        </div>";
+            $total = 0;
+            
+                for($i = 0; $i < sizeOf($titles); $i++){
+                    echo "
+                    <div class='checkout-product'>
+                        <div class='product-checkout'>
+                            <img src='".$srcs[$i]."' alt=''>
+                            <div class='cart-details'>
+                                <h4>".$titles[$i]."</h4> 
+                                <p>Quantity: ".$quantities[$i]."</p>
+                            </div>
+                            
+                            <div class='price'>
+                                <p>PHP ".$prices[$i]."</p>
+                            </div>
+                        </div>
+                    </div>
+                    ";
+                    $total+=$prices[$i] * $quantities[$i];
+                }
+                echo "<div class='total-checkout'>
                 <p>PHP $total.00</p>
                 <p style='color: gray'>Total</p>
-            </div>
-            <div class='checkout-container'>
-                <a href='checkout.php?total=$total'>
-                    <div class='checkout'>
-                        <p>Check out</p>
-                    </div>
-                </a>
-            </div>
-            ";
-        }
-
-       ?>
+            </div>";
+        ?>
+        </div>
     </div>
 
     <footer>

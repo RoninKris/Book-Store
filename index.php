@@ -61,12 +61,12 @@
                 </div>
             </div>
         </a>
-        <a href="product.php?src=images/6.jpg&title='Harry Potter and the Half-blood Prince'&price=920.45&synopsis=Rowling and the sixth and penultimate novel in the Harry Potter series. Set during Harry Potter's sixth year at Hogwarts, the novel explores the past of the boy wizard's nemesis, Lord Voldemort, and Harry's preparations for the final battle against Voldemort alongside his headmaster and mentor Albus Dumbledore."> 
+        <a href="product.php?src=images/6.jpg&title='Harry Potter and the Half-blood Prince'&price=920.00&synopsis=Rowling and the sixth and penultimate novel in the Harry Potter series. Set during Harry Potter's sixth year at Hogwarts, the novel explores the past of the boy wizard's nemesis, Lord Voldemort, and Harry's preparations for the final battle against Voldemort alongside his headmaster and mentor Albus Dumbledore."> 
             <div class='books'> 
                 <img src='images/6.jpg' alt=''>
                 <div class='details'>
                     <p>Harry Potter and the Half-blood Prince</p>
-                    PHP 920.45<br>
+                    PHP 920.00<br>
                 </div>
             </div>
         </a>

@@ -44,3 +44,12 @@ function addToCart(){
     alert("Item successfully added to cart");
     form.submit();
 }
+function displayBills(){
+    let billDivs = document.getElementsByClassName("bill");
+    let billQuantity = document.getElementsByClassName("billQuantity");
+    for(let i = 0; i < billDivs.length; i++){
+        if(parseInt(billQuantity[i].innerText) == 0){
+            billDivs[i].style = "display: none";
+        }
+    }
+}
