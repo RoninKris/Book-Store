@@ -555,9 +555,28 @@ input:focus{
 .pay:hover{
     background-color: #f9ae00;
     transition: .5s;
+    cursor: pointer;
 }
 .pay p{
     font-family: Arial;
     color: white;
+    font-weight: 700;
+}
+.message{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 60vh;
+    width: 100%;
+}
+.message h1{
+    font-family: Arial;
+    color: gray;
+}
+.message p{
+    font-family: Arial;
+    font-size: 25px;
     font-weight: 700;
 }

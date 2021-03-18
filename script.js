@@ -58,7 +58,7 @@ function displayBills(){
     }
 }
 function validatePayment(){
-    if(document.querySelector(".paymentInput").value == "" || document.querySelector(".paymentInput").value < document.querySelector(".totalValue").value){
+    if(document.querySelector(".paymentInput").value == "" || parseInt(document.querySelector(".paymentInput").value) < parseInt(document.querySelector(".totalValue").value)){
         document.querySelector(".pay").style = "display: none;";
     }
     else{
