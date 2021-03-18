@@ -44,6 +44,10 @@ function addToCart(){
     alert("Item successfully added to cart");
     form.submit();
 }
+function buyItNow(){
+    form.action="cart.php";
+    form.submit();
+}
 function displayBills(){
     let billDivs = document.getElementsByClassName("bill");
     let billQuantity = document.getElementsByClassName("billQuantity");
@@ -52,4 +56,16 @@ function displayBills(){
             billDivs[i].style = "display: none";
         }
     }
+}
+function validatePayment(){
+    if(document.querySelector(".paymentInput").value == "" || document.querySelector(".paymentInput").value < document.querySelector(".totalValue").value){
+        document.querySelector(".pay").style = "display: none;";
+    }
+    else{
+        document.querySelector(".pay").style = "display: flex";
+    }
+}
+function submitPayment(){
+    form = document.querySelector(".paymentform");
+    form.submit();
 }

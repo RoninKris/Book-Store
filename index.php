@@ -16,7 +16,7 @@
             </a>
     </div>
     <div class="main-container">
-        <a href="product.php?src=images/1.jpg&title='Harry Potter and the Philosopher&lsquo;s Stone'&price=420.00&synopsis=The first novel in the Harry Potter series and Rowling's debut novel, it follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry."> 
+        <a href="product.php?src=images/1.jpg&title=Harry Potter and the Philosopher&lsquo;s Stone&price=420.00&synopsis=The first novel in the Harry Potter series and Rowling's debut novel, it follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry."> 
             <div class='books'> 
                 <img src='images/1.jpg' alt=''>
                 <div class='details'>
@@ -25,7 +25,7 @@
                 </div>
             </div>
         </a>
-        <a href="product.php?src=images/2.jpg&title='Harry Potter and the Chamber of Secrets'&price=580.00&synopsis=The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the &quot;Chamber of Secrets&quot; has been opened and that the &quot;heir of Slytherin&quot; would kill all pupils who do not come from all-magical families."> 
+        <a href="product.php?src=images/2.jpg&title=Harry Potter and the Chamber of Secrets&price=580.00&synopsis=The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the &quot;Chamber of Secrets&quot; has been opened and that the &quot;heir of Slytherin&quot; would kill all pupils who do not come from all-magical families."> 
             <div class='books'> 
                 <img src='images/2.jpg' alt=''>
                 <div class='details'>
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </a>
-        <a href="product.php?src=images/3.jpg&title='Harry Potter and the Prisoner of Azkaban'&price=690.00&synopsis=Harry Potter and the Prisoner of Azkaban is a fantasy novel written by British author J. K. ... Along with friends Ronald Weasley and Hermione Granger, Harry investigates Sirius Black, an escaped prisoner from Azkaban, the wizard prison, believed to be one of Lord Voldemort's old allies."> 
+        <a href="product.php?src=images/3.jpg&title=Harry Potter and the Prisoner of Azkaban&price=690.00&synopsis=Harry Potter and the Prisoner of Azkaban is a fantasy novel written by British author J. K. ... Along with friends Ronald Weasley and Hermione Granger, Harry investigates Sirius Black, an escaped prisoner from Azkaban, the wizard prison, believed to be one of Lord Voldemort's old allies."> 
             <div class='books'> 
                 <img src='images/3.jpg' alt=''>
                 <div class='details'>
@@ -43,7 +43,7 @@
                 </div>
             </div>
         </a>
-        <a href="product.php?src=images/4.jpg&title='Harry Potter and the Goblet of Fire'&price=715.00&synopsis=Rowling and the fourth novel in the Harry Potter series. It follows Harry Potter, a wizard in his fourth year at Hogwarts School of Witchcraft and Wizardry, and the mystery surrounding the entry of Harry's name into the Triwizard Tournament, in which he is forced to compete."> 
+        <a href="product.php?src=images/4.jpg&title=Harry Potter and the Goblet of Fire&price=715.00&synopsis=Rowling and the fourth novel in the Harry Potter series. It follows Harry Potter, a wizard in his fourth year at Hogwarts School of Witchcraft and Wizardry, and the mystery surrounding the entry of Harry's name into the Triwizard Tournament, in which he is forced to compete."> 
             <div class='books'> 
                 <img src='images/4.jpg' alt=''>
                 <div class='details'>
@@ -52,7 +52,7 @@
                 </div>
             </div>
         </a>
-        <a href="product.php?src=images/5.jpg&title='Harry Potter and the Order of the Phoenix'&price=830.00&synopsis=Rowling and the fifth novel in the Harry Potter series. It follows Harry Potter's struggles through his fifth year at Hogwarts School of Witchcraft and Wizardry, including the surreptitious return of the antagonist Lord Voldemort, O.W.L. exams, and an obstructive Ministry of Magic."> 
+        <a href="product.php?src=images/5.jpg&title=Harry Potter and the Order of the Phoenix&price=830.00&synopsis=Rowling and the fifth novel in the Harry Potter series. It follows Harry Potter's struggles through his fifth year at Hogwarts School of Witchcraft and Wizardry, including the surreptitious return of the antagonist Lord Voldemort, O.W.L. exams, and an obstructive Ministry of Magic."> 
             <div class='books'> 
                 <img src='images/5.jpg' alt=''>
                 <div class='details'>
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </a>
-        <a href="product.php?src=images/6.jpg&title='Harry Potter and the Half-blood Prince'&price=920.00&synopsis=Rowling and the sixth and penultimate novel in the Harry Potter series. Set during Harry Potter's sixth year at Hogwarts, the novel explores the past of the boy wizard's nemesis, Lord Voldemort, and Harry's preparations for the final battle against Voldemort alongside his headmaster and mentor Albus Dumbledore."> 
+        <a href="product.php?src=images/6.jpg&title=Harry Potter and the Half-blood Prince&price=920.00&synopsis=Rowling and the sixth and penultimate novel in the Harry Potter series. Set during Harry Potter's sixth year at Hogwarts, the novel explores the past of the boy wizard's nemesis, Lord Voldemort, and Harry's preparations for the final battle against Voldemort alongside his headmaster and mentor Albus Dumbledore."> 
             <div class='books'> 
                 <img src='images/6.jpg' alt=''>
                 <div class='details'>
@@ -70,7 +70,7 @@
                 </div>
             </div>
         </a>
-        <a href="product.php?src=images/7.jpg&title='Harry Potter and the Deathly Hollows'&price=1080.00&synopsis=The novel chronicles the events directly following Harry Potter and the Half-Blood Prince (2005) and the final confrontation between the wizards Harry Potter and Lord Voldemort. Deathly Hallows shattered sales records upon release, surpassing marks set by previous titles of the Harry Potter series."> 
+        <a href="product.php?src=images/7.jpg&title=Harry Potter and the Deathly Hollows&price=1080.00&synopsis=The novel chronicles the events directly following Harry Potter and the Half-Blood Prince (2005) and the final confrontation between the wizards Harry Potter and Lord Voldemort. Deathly Hallows shattered sales records upon release, surpassing marks set by previous titles of the Harry Potter series."> 
             <div class='books'> 
                 <img src='images/7.jpg' alt=''>
                 <div class='details'>

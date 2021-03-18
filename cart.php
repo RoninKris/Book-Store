@@ -39,7 +39,7 @@
             <div class='product'>
                 <img src='".$srcs[$i]."' alt=''>
                 <div class='cart-details'>
-                    <h4>".$titles[$i]."</h4> 
+                    <h4>".urldecode($titles[$i])."</h4> 
                     <p>Quantity: ".$quantities[$i]."</p>
                 </div>
                 

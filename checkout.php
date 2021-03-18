@@ -83,6 +83,7 @@
         }
         echo "<div class='toRight'>
         <div class='bills box'>
+            <h1>Please prepare:</h1>
             <div class='bill'>
                 <img src='images/bills/1000.jpg'>
                 <div class='bill-count'>
@@ -137,12 +138,18 @@
                     <h1 class='billQuantity'>$one</h1>
                 </div>
             </div>
+            <form action='receipt.php' method=post class='paymentform'>
+                <div class='payment'>
+                    <input type=number min=0 name=payment class=paymentInput onkeyup=validatePayment()> 
+                    <p>Your Payment</p>
+                </div>
+            
         </div>";
             $total = 0;
-            
+            echo "
+                    <div class='checkout-product'>";
                 for($i = 0; $i < sizeOf($titles); $i++){
                     echo "
-                    <div class='checkout-product'>
                         <div class='product-checkout'>
                             <img src='".$srcs[$i]."' alt=''>
                             <div class='cart-details'>
@@ -154,14 +161,22 @@
                                 <p>PHP ".$prices[$i]."</p>
                             </div>
                         </div>
-                    </div>
                     ";
                     $total+=$prices[$i] * $quantities[$i];
                 }
-                echo "<div class='total-checkout'>
-                <p>PHP $total.00</p>
-                <p style='color: gray'>Total</p>
-            </div>";
+                echo "
+                <div class='total-checkout'>
+                    <p>PHP $total.00</p>
+                    <p style='color: gray'>Total</p>
+                    <div class=invisible> <input type=text name=total value=$total class=totalValue> </div>
+                </div>
+                <a class='pay-a' onclick=submitPayment()>
+                <div class=pay>
+                    <p>Confirm</p>
+                </div>
+            </a>
+            </form>
+        </div>"/*end div for checkout-product*/;
         ?>
         </div>
     </div>

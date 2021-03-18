@@ -1,9 +1,17 @@
 <?php
-    error_reporting(0);
-    $src = $_GET['src'];
-    $title = $_GET['title'];
-    $price = $_GET['price'];
-    $synopsis = $_GET['synopsis'];
+    session_start();
+    $titles = $_SESSION['titles'];
+    $prices = $_SESSION['prices'];
+    $quantities = $_SESSION['quantities'];
+    $srcs = $_SESSION['srcs'];
+    $total = $_POST['total'];
+    $payment = $_POST['payment'];
+    // $quantities = $_SESSION['quantities'];
+    // for($i = 0; $i < sizeOf($titles); $i++){
+    //     echo $titles[$i]."<br>";
+    //     echo $prices[$i]."<br>";
+    //     echo $quantities[$i]."<br>";
+    // }
 ?>
 <!DOCTYPE html>
 <html lang='en'>
@@ -14,53 +22,23 @@
     <link rel='stylesheet' href='style.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-    <title><?php echo $title ?></title>
+    <title>Check out</title>
 </head>
-<body>
-    <div class='navbar' style='margin-bottom: 0'>
+<body onload="displayBills()">
+    <div class='navbar'>
         <img src='images/logo.png' alt='' height='100%'>
         <h1> <div id='yellow'> Flourish</div> and <div id='yellow'>Blotts</div> Bookseller</h1>
             <a class='cart' href='cart.php'>
                 <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z'/></svg>
             </a>
     </div>
-    <div class='main-container'
-    style='
-    background-color: white; 
-    width: 100%;
-    padding: 50px 0;
-    padding-left: 300px;
-    '>
+    <div class='main-container-checkout'>
         <?php
-            echo "<div class='icon'>
-            <img src='$src' alt=''>
-        </div>
-        <div class='product-details'>
-            <h1>".urldecode($title)."</h1>
-            <p>PHP $price</p>
-            <hr>
-            <form action='add.php' method='post' id='submitform'>
-                <div class=invisible>
-                <input type=text name=title value='".urldecode($title)."'>
-                <input type=text name=price value=$price>
-                <input type=text name=src value=$src>
-                <input type=text name=synopsis value=$synopsis>
-                </div>
-                <div class='quantity'>
-                    <p style='font-weight: 500;'>Quantity</p>
-                    <input type='button' value='&minus;' onclick='minusQuantity()'><input type='text' name='quantity' value='1' class='quantityBox'><input type='button' value='+' onclick='addQuantity()'>
-                </div>
-                <input type=submit value='Add to Cart'  name=action class='addtocart'>
-                <input type=submit value='Buy it now'  name=action class='buynow'>
-                <div class='synopsis'>
-                    <hr>
-                    $synopsis
-                    <hr>
-                </div>
-            </form>
-        </div>";
+        echo $total;
+        echo $payment;
         ?>
     </div>
+
     <footer>
         <div class='col one'>
             <h1>INFORMATION</h1>
@@ -87,3 +65,6 @@
 </body>
 <script src='script.js'></script>
 </html>
+<!-- <a href=remove.php?src=".$srcs[$i]."><div class='remove'>
+                    <p>remove</p>
+                </div> </a> -->
