@@ -22,7 +22,12 @@
 //         "</a>";
 //     }
 // }
-
+function fadeIn(){
+    let books = document.getElementsByClassName("books");
+    for(let i = 0; i < books.length; i++)
+    books[i].style = "opacity: 1; margin-top: 1px; transition: 2s";
+    document.querySelector(".header").style = "opacity: 1; transition: 1s";
+}
 function minusQuantity(){
     let qty = parseInt(document.querySelector(".quantityBox").value);
     if(qty > 1){

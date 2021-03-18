@@ -7,15 +7,27 @@
     <link rel="stylesheet" href="style.css">
     <title>Book Store</title>
 </head>
-<body onload="displayBooks()">
-    <div class="navbar">
+<body onload="fadeIn()">
+    <div class="navbar" style="
+        position: fixed;
+        z-index: 1;
+    ">
         <img src="images/logo.png" alt="" height="100%">
         <h1> <div id="yellow"> Flourish</div> and <div id="yellow">Blotts</div> Bookseller</h1>
             <a class="cart" href="cart.php">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 19.5c0 .829-.672 1.5-1.5 1.5s-1.5-.671-1.5-1.5c0-.828.672-1.5 1.5-1.5s1.5.672 1.5 1.5zm3.5-1.5c-.828 0-1.5.671-1.5 1.5s.672 1.5 1.5 1.5 1.5-.671 1.5-1.5c0-.828-.672-1.5-1.5-1.5zm1.336-5l1.977-7h-16.813l2.938 7h11.898zm4.969-10l-3.432 12h-12.597l.839 2h13.239l3.474-12h1.929l.743-2h-4.195z"/></svg>
             </a>
     </div>
-    <div class="main-container">
+    <div class="header">
+        <img src="images/header.jpg" alt="" width=100%>
+        <h1>Rediscover the tale of the Chosen One</h1>
+    </div>
+    <div class="main-container" style="
+        margin-top: 60vh;
+        background-color: #f0f0f0;
+        width: 100%;
+        padding: 50px 250px;
+    ">
         <a href="product.php?src=images/1.jpg&title=Harry Potter and the Philosopher&lsquo;s Stone&price=420.00&synopsis=The first novel in the Harry Potter series and Rowling's debut novel, it follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry."> 
             <div class='books'> 
                 <img src='images/1.jpg' alt=''>
