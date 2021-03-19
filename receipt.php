@@ -6,6 +6,7 @@
     $srcs = $_SESSION['srcs'];
     $total = $_POST['total'];
     $payment = $_POST['payment'];
+    $username = $_SESSION['username'];
     // $quantities = $_SESSION['quantities'];
     // for($i = 0; $i < sizeOf($titles); $i++){
     //     echo $titles[$i]."<br>";
@@ -34,9 +35,9 @@
     </div>
     <div class='main-container'>
         <div class="message">
-            <h1>Thank you for purchasing!</h1>
+            <h1>Thank you for purchasing, <?php echo $username ?>!</h1>
             <p>Your change: <?php echo $payment - $total ?></p>
-                <a href='start.php'><div class='continue' style="margin-top: 50px;">Continue browsing</div></a>
+                <a href='continue.php'><div class='continue' style="margin-top: 50px;">Continue browsing</div></a>
         </div>
     </div>
 
