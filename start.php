@@ -63,22 +63,42 @@
             color: #ffb91d;
             font-size: 100px;
         }
+        
+        @keyframes fade-in{
+            0%{
+                color: white;
+                opacity: 0;
+            }
+            50%{
+                color: white;
+                opacity: .5;
+            }
+            100%{
+                opacity: 1;
+                color: #ffb91d;
+            }
+        }
+
         input[type=submit]{
             display: none;
             background: none;
             border: none;
             font-size: 30px;
-            color: white;
+            color: #ffb91d;
             position: absolute;
             bottom: 20%;
             left: 45%;
             font-family: Lucida Calligraphy;
+            animation: fade-in 1s;
             transition: .5s;
         }
         input[type=submit]:hover{
             -webkit-text-stroke: 1px #ffb91d;
             cursor: pointer;
             transition: .5s;
+        }
+        input[type=submit]:focus{
+            outline: none;
         }
     </style>
     <title>Welcome</title>

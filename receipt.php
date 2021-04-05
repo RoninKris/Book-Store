@@ -67,6 +67,3 @@
 </body>
 <script src='script.js'></script>
 </html>
-<!-- <a href=remove.php?src=".$srcs[$i]."><div class='remove'>
-                    <p>remove</p>
-                </div> </a> -->

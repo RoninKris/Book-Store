@@ -53,7 +53,7 @@
             echo "
             <div class='empty'>
                 <p>Your cart is currently empty.</p>
-                <a href='start.php'><div class='continue'>Continue browsing</div></a>
+                <a href='index.php'><div class='continue'>Continue browsing</div></a>
             </div>";
            }
         else{
